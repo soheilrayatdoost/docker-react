@@ -12,7 +12,7 @@ deploy:
   provider: elasticbeanstalk
   region: "eu-north-1"
   app: "third_docker"
-  env: "Thirddocker-env"
+  env: "Thirddocker-env-1"
   bucket_name: "elasticbeanstalk-eu-north-1-880115758046"
   bucket_path: "third_docker"
   on:
