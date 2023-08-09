@@ -1,8 +1,9 @@
 # Specify a base image
-FROM node:alpine as builder
+# as builder
+FROM node:alpine 
 WORKDIR /app
 # Install some dependencies
-COPY package.json ./
+COPY package*.json ./
 RUN npm install
 COPY ./ ./
 RUN npm run build
