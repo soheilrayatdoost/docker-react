@@ -11,10 +11,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "eu-north-1"
-  app: "docker"
+  app: "third_docker"
   env: "Thirddocker-env"
   bucket_name: "elasticbeanstalk-eu-north-1-880115758046"
-  bucket_path: "third_docker"
+  bucket_path: "s3://elasticbeanstalk-eu-north-1-880115758046"
   on:
     branch: master
   acess_key_id: $AWS_ACCESS_KEY
